@@ -6,11 +6,14 @@ def FibonacciNaive(n):
     else:
         return FibonacciNaive(n - 1) + FibonacciNaive(n - 2)
 
-
-
 #Dynamic Programming: Bottom Up Approach
-def FibonacciBottomUp():
-    pass
+def FibonacciBottomUp(n):
+    fib = [0, 1]
+
+    for i in range(2, n + 1):
+        fib.append(fib[i-1] + fib[i-2])
+
+    return fib[n]
 
 #Dynamic Programming: Memoized solution
 def FibonacciMemoized(n):
@@ -33,6 +36,7 @@ def FibonacciRecurMemoized(memoize, n):
 def main():
     print(FibonacciNaive(30))
     print(FibonacciMemoized(100)) #works substantially faster for larger inputs
+    print(FibonacciBottomUp(100)) #more expeditious performance than naive recursion
 
 
 if __name__ == '__main__':
