@@ -38,6 +38,7 @@ def main():
     print(FibonacciMemoized(100)) #works substantially faster for larger inputs
     print(FibonacciBottomUp(100)) #more expeditious performance than naive recursion
 
+    print(FibonacciMemoized(4))
 
 if __name__ == '__main__':
     main()
