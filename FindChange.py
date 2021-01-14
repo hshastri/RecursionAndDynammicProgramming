@@ -10,7 +10,7 @@ def MakeChange(arr, val):
 
     for row in range(1, len(arr) + 1):
         for col in range(1, val + 1):
-            #if the cpin value is larger than the ampount remaining, then
+            #if the coin value is larger than the amount remaining
             if arr[row - 1] > col:
                 ways[row][col] = ways[row - 1][col]
             else:
