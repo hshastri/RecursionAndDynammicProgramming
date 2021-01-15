@@ -18,10 +18,9 @@ def MakeChange(arr, val):
 
     return ways[len(arr)][val]
 
-
 def main():
-    arrOfCoins = [1, 3, 4]
-    val = 7
+    arrOfCoins = [1,2,5]
+    val = 5
     print(MakeChange(arrOfCoins, val))
 
 if __name__ == '__main__':
