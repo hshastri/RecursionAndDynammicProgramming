@@ -18,10 +18,14 @@ def MakeChange(arr, val):
 
     return ways[len(arr)][val]
 
+def MakeChangeRecurHelper():
+    pass
+
 def main():
     arrOfCoins = [1,2,5]
     val = 5
     print(MakeChange(arrOfCoins, val))
+    print(MakeChangeRecur(arrOfCoins, val))
 
 if __name__ == '__main__':
     main()
